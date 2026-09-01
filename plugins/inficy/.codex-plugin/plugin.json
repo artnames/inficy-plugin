@@ -1,0 +1,46 @@
+{
+  "name": "inficy",
+  "version": "0.1.0-beta.1",
+  "description": "Read what your AI agents did in Inficy: recorded executions, receipt verification and agent connection status, plus opt-in tracking of a selected ChatGPT session.",
+  "publisher": {
+    "name": "Artnames Ltd",
+    "displayName": "Inficy",
+    "email": "contact@artnames.io",
+    "url": "https://inficy.com"
+  },
+  "homepage": "https://inficy.com",
+  "repository": "https://github.com/artnames/inficy-plugin",
+  "license": "MIT",
+  "keywords": [
+    "inficy",
+    "ai-agents",
+    "agent-activity",
+    "receipts",
+    "verification",
+    "observability",
+    "productivity"
+  ],
+  "skills": "./skills/",
+  "apps": "./.app.json",
+  "interface": {
+    "displayName": "Inficy",
+    "category": "Productivity",
+    "capabilities": [
+      "read",
+      "write"
+    ],
+    "icon": "./assets/icon.png",
+    "logo": "./assets/logo.png",
+    "privacyPolicyUrl": "https://inficy.com/privacy",
+    "termsOfServiceUrl": "https://inficy.com/terms",
+    "supportUrl": "https://inficy.com/security",
+    "starterPrompts": [
+      "Use Inficy to track this session.",
+      "Use Inficy to show my session analytics.",
+      "Use Inficy to show my productivity this week.",
+      "Use Inficy to verify my latest receipt.",
+      "Use Inficy to check which agents are connected."
+    ]
+  },
+  "tools": "./tools.json"
+}

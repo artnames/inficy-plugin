@@ -1,0 +1,19 @@
+{
+  "apps": [
+    {
+      "name": "inficy",
+      "displayName": "Inficy",
+      "description": "Hosted Inficy remote MCP server. Each user signs in to their own Inficy workspace through the MCP OAuth flow.",
+      "connection": {
+        "type": "chatgpt_registered_connection",
+        "id": "plugin_asdk_app_6a96b6e278cc8191b5f33ec4e1263d82"
+      },
+      "server": {
+        "type": "remote_mcp",
+        "url": "https://inficy.com/mcp",
+        "transport": "streamable_http",
+        "authentication": "oauth2.1"
+      }
+    }
+  ]
+}

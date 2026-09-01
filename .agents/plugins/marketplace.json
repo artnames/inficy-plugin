@@ -1,0 +1,20 @@
+{
+  "name": "inficy-plugins",
+  "interface": {
+    "displayName": "Inficy Plugins"
+  },
+  "plugins": [
+    {
+      "name": "inficy",
+      "source": {
+        "source": "local",
+        "path": "./plugins/inficy"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

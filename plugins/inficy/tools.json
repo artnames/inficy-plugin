@@ -1,0 +1,85 @@
+{
+  "$comment": "Every MCP tool this package advertises, and which tool each starter prompt needs. Validated structurally by scripts/validate-plugin-package.mjs and against the live server definition by src/lib/__tests__/plugin-package.test.ts.",
+  "server": "https://inficy.com/mcp",
+  "tools": [
+    "get_capabilities",
+    "get_account",
+    "get_connection_status",
+    "list_executions",
+    "get_execution",
+    "verify_receipt",
+    "get_activity_summary",
+    "get_anomalies",
+    "get_usage",
+    "start_session",
+    "record_checkpoint",
+    "finish_session",
+    "get_session_analytics",
+    "get_productivity_summary"
+  ],
+  "scopes": {
+    "artifacts:read": [
+      "verify_receipt",
+      "get_execution"
+    ],
+    "activity:read": [
+      "list_executions",
+      "get_activity_summary",
+      "get_anomalies"
+    ],
+    "agents:read": [
+      "get_connection_status"
+    ],
+    "profile:read": [
+      "get_account",
+      "get_capabilities"
+    ],
+    "billing:read": [
+      "get_usage"
+    ],
+    "sessions:write": [
+      "start_session",
+      "record_checkpoint",
+      "finish_session"
+    ],
+    "sessions:read": [
+      "get_session_analytics",
+      "get_productivity_summary"
+    ]
+  },
+  "starterPrompts": {
+    "Use Inficy to track this session.": [
+      "start_session",
+      "record_checkpoint",
+      "finish_session"
+    ],
+    "Use Inficy to show my session analytics.": [
+      "get_session_analytics"
+    ],
+    "Use Inficy to show my productivity this week.": [
+      "get_productivity_summary"
+    ],
+    "Use Inficy to verify my latest receipt.": [
+      "list_executions",
+      "verify_receipt"
+    ],
+    "Use Inficy to check which agents are connected.": [
+      "get_connection_status"
+    ]
+  },
+  "activityCategories": {
+    "$comment": "Values record_checkpoint accepts for activity_category, and the dashboard category each is stored under. Reported by the assistant, never observed by Inficy.",
+    "web": "Web & research",
+    "research": "Web & research",
+    "code": "Code & commands",
+    "command": "Code & commands",
+    "shell": "Code & commands",
+    "file": "Files & data",
+    "communication": "Communication",
+    "decision": "Decision & planning",
+    "planning": "Decision & planning",
+    "tool": "Other tools",
+    "other": "Other",
+    "$fallback": "Missing, empty or unrecognised values are stored as Other."
+  }
+}
