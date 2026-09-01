@@ -23,7 +23,7 @@ public endpoint `https://inficy.com/mcp`.
 ## 3. Install from this marketplace source
 
 ```
-codex plugin marketplace add artnames/inficy-plugin --ref v0.1.0-beta.1
+codex plugin marketplace add artnames/inficy-plugin --ref v0.1.0-beta.2
 ```
 
 Restart the desktop app, open the Plugins Directory, select Inficy Plugins and

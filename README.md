@@ -24,8 +24,10 @@ scripts/validate-plugin-package.mjs   offline package validation
 
 ## Status
 
-In development. The package is not published to any marketplace and the
-ChatGPT connection ID in `.app.json` is still a guarded placeholder.
+GitHub beta, available for developer testing. The ChatGPT connection ID in
+`.app.json` is the pinned registered connection ID.
+`.app.example.json` intentionally retains a documented placeholder. The plugin
+has not yet been submitted to OpenAI's public Plugins Directory.
 
 ## Validate
 

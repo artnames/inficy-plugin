@@ -2,7 +2,7 @@
 
 Status: prerelease. Canonical repository: https://github.com/artnames/inficy-plugin
 
-## Gates before any prerelease (all passed for v0.1.0-beta.1)
+## Gates before any prerelease (all passed for v0.1.0-beta.2)
 
 1. All 21 tools resolve on the production MCP server, including the five
    tracked-session tools.
@@ -30,9 +30,9 @@ token, client secret, API key, cookie, workspace identifier or `.env` file.
 ## Prerelease
 
 ```
-git tag -a v0.1.0-beta.1 -m "Inficy plugin 0.1.0-beta.1"
-git push origin v0.1.0-beta.1
-codex plugin marketplace add artnames/inficy-plugin --ref v0.1.0-beta.1
+git tag -a v0.1.0-beta.2 -m "Inficy plugin 0.1.0-beta.2"
+git push origin v0.1.0-beta.2
+codex plugin marketplace add artnames/inficy-plugin --ref v0.1.0-beta.2
 ```
 
 ## Final 0.1.0

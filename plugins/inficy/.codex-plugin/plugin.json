@@ -1,6 +1,6 @@
 {
   "name": "inficy",
-  "version": "0.1.0-beta.1",
+  "version": "0.1.0-beta.2",
   "description": "Read what your AI agents did in Inficy: recorded executions, receipt verification and agent connection status, plus opt-in tracking of a selected ChatGPT session.",
   "publisher": {
     "name": "Artnames Ltd",
